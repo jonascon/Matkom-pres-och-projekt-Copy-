@@ -1,0 +1,101 @@
+\input{preamble.tex}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{thmtools}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+\pagestyle{plain}
+\newsavebox{\myheadbox}
+\fancyhf{}
+%\begin{flushright}
+\lhead{
+Jonas Conneryd \\ \url{conneryd@kth.se}}
+%\end{flushright}
+\rhead{970731-7559  \\
+\the\year
+}
+
+\chead{\Large{\textbf{\textsf{Non-constructivism and algorithms} \\ \vspace{-4pt}\textsf{\normalsize MM7020 Mathematical Communication}}}}
+\cfoot{\thepage}
+\declaretheoremstyle[headfont=\bfseries\sffamily]{normalhead}
+\interfootnotelinepenalty=10000
+%\title{\vspace{-2cm}\textbf{\textsf{ Homework 3}}}
+\date{}
+\usepackage{csquotes}
+%\author{Jonas Conneryd \\
+%conneryd@kth.se \\ 970731-7559}
+\begin{document}
+%\maketitle
+
+
+\thispagestyle{fancy}
+\theoremstyle{normalhead}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+\section{Introduction}
+In modern mathematics, the notion of what constitutes a mathematical proof seems to be clear enough that results can be published in journals, prizes can be awarded, and incorrect proofs can be refuted. (However, it seems that when you ask mathematicians what exactly a proof is, you're likely to get an answer similar to what Louis Armstrong is supposed to have replied when asked to define jazz: \say{If you have to ask, you'll never know}). But this wasn't always as universally agreed upon; in the start of the 20:th century, powerful but non-constructive results sparked a debate among mathematicians about which proof methods are valid. While this debate was eventually essentially settled in favor of non-constructive results, constructive mathematics seems to have gotten a spiritual successor in the form of algorithms research. Surely, to prove a result of the form \say{There is an algorithm that solves \emph{this} problem \emph{this} quickly}, what else could you do except provide an algorithm that does exactly this? It turns out that this intuition is not correct, and this fact has had considerable impact in how we view results about algorithms.
+
+\section{The Result that Started It All}
+Up until the end of the 19:th century, essentially all results had been constructive in nature. Although Cantor seems to have produced some non-constructive results, it was the proof of Hilbert's Basis Theorem in 1888 that initially sparked a debate about the nature of proof. Hilbert basis theorem states that 
+\begin{theorem}
+If $R$ is a Noetherian ring, then $R[X]$ is a Noetherian ring.
+\end{theorem}
+It is not essential to understand what this result entails. What matters here is \emph{how} he proved it. To prove this result, you need to show that a finite collection of mathematical objects with a set of certain specifications exists. Hilbert did so without actually \emph{constructing} them, which was novel at the time. The result itself is very powerful and the basis of many further results in algebra.
+
+\section{The Objections}
+A cohort of mathematicians that were sympathetic towards the constructivist view of mathematics, in which a proof of existence is one where the object of interest is actually constructed, were not convinced by this proof. Paul Gordan, known to all students of quantum mechanics for \say{Clebsch-Gordan coefficients}, is supposed to have said about this result, albeit with unclear intention, that 
+
+\say{This is not mathematics; this is theology!}.
+
+Poincaré also put forward sharp criticism, but perhaps the fiercest opponent was L. E. J. Brouwer (of Brouwer's fixed point theorem fame) and the followers of his \emph{intuitionist} view of mathematics. There are other schools of constructive mathematics, but we will only have time to touch upon this one school.
+
+\section{What is intuitionism?}
+Let me start by saying that no philosophical position, taken after years of reasoning, study and experience, can be adequately explained in the two minutes or so I have to spare. Now, let me explain Brouwer's intuitionism to you in two minutes or less. Hilbert was a proponent of \emph{formalism}, which maintained the view that mathematics is essentially a game about symbol manipulation in which the rules are clear and well defined, and results obtained through these rules are, in some sense, objectively true within the bounds of the game. Brouwer, on the other hand, thought that mathematics is inherently a subjective activity - the result of constructive mental activity by humans. This implies in particular that mathematical truth is subjective, with the following consequence: a mathematical object is considered a product of a construction produced by a mind, and therefore existence of an object is \emph{equivalent} to its possibility of being constructed. This stands in sharp contrast to the usual approach, in which it is valid to prove existence of an object through refuting its non-existence. Put succinctly, yet possibly a bit crudely, intuitionists refute the validity of the \emph{law of excluded middle}: That for any proposition, either that proposition or its negation are true. Intuitionist mathematicians therefore work without the law of excluded middle. 
+
+\section{Algorithmic research and non-constructivism}
+Since mathematics takes up most of the time in the days of all the people listening to this, I would venture that while you probably do not think about it in your daily mathematical work, you believe in the law of excluded middle, and therefore accept non-constructive methods are valid methods of mathematical proof. Indeed, the debate over the law of excluded middle seems to have been decisively settled in favor of it. But ever since the advent of computers, the interest in working with constructive results has made a glorious return in the form of algorithms research. 
+
+Complexity theory, which deals with characterizing which problems can be efficiently solved by algorithms, is a proper subfield of mathematics, and asks questions of the form: Can \emph{this} problem be solved \emph{this} efficiently using an algorithm? How would you prove a positive result in complexity theory? Well, by explicitly constructing an algorithm that does what you want efficiently enough! (Negative results are another story. A general way to prove negative results in complexity theory is worth at least a million dollars in prize money.) A result in the form of an efficient algorithm has the added benefit of possibly actually being of use to people outside the mathematical community, if the underlying problem models some real-life scenario.
+
+Could it be that positive results in complexity can be proved non-constructively? That is, can you prove that there is an algorithm, without supplying the actual algorithm? It really is counter-intuitive, but the answer to this question turns out to be \emph{yes}. 
+
+\section{Robertson-Seymour theorem}
+The results in question which in a way changed how we think about results about algorithms is the \emph{Robertson-Seymour theorem} combined with another result, also by Robertson and Seymour. The results concern \emph{graphs}, which are collections of \emph{vertices} with \emph{edges} drawn between them. We need some definitions to state these theorems. 
+
+\begin{definition}[Informal]
+A \emph{graph} $G = (V,E)$ is a collection of vertices (points) and edges (lines between the points).
+\end{definition}
+Graphs model pairwise relations between objects and are of immense importance in algorithms research and mathematical modelling, as well as very fascinating mathematical objects in their own right.
+
+\begin{definition}
+Let $H$ and $G$ be graphs. If we can form $H$ from $G$ by deleting vertices, deleting edges and contracting two edge-connected vertices into one, we say that $H$ is a \emph{minor} of $G$. The process of deleting vertices, deleting edges and contracting two edge-connected vertices into one is denoted by \emph{taking minors}. 
+\end{definition}
+
+Naturally, a graph can have different properties. It might for instance be possible to draw the graph on the plane without lines intersecting. In this case we say that the graph is \emph{planar}.
+\begin{theorem}[Robertson-Seymour]
+Suppose a graph property $\mathcal{P}$ is retained when taking minors. Then there is a finite list of graphs such that a graph $G$ has property $\mathcal{P}$ if and only if none of the graphs in the list can be formed from $G$ by taking minors.
+\end{theorem}
+Stated like this, this theorem might not seem so interesting. However, this theorem is the culmination of a 20-year, 500 page project by Robertson and Seymour that greatly influenced graph theory during and after its completion. When we combine it with another result obtained during the course of the project, we will be able to say a great deal about many graph-theoretic algorithmic problems. 
+\begin{theorem}
+Let $H$ be a fixed graph, and let $G= (V, E)$ be an arbitrary graph. Then there is an algorithm that decides if $H$ is a minor of $G$ that runs in $O(\lvert V\rvert^3)$ time.
+\end{theorem}
+This result is a good-old constructive one; However it takes about 50 pages to describe the algorithm. 
+
+
+Putting one and one together: By Theorem 1, we know that we have to check a \emph{finite} number of cases, that are the same regardless of the input graph, and by theorem 2 we know that we can check each case efficiently. Therefore, we have the following, incredibly powerful algorithmic result:
+\begin{theorem}
+Determining whether a given graph $G=(V, E)$ has an arbitrary property that is closed under taking minors can be done in $O(\lvert V\rvert^3)$ time.
+\end{theorem}
+Many important graph properties turn out to be closed under taking minors; one example is the property of being able to be drawn on a surface, such as a sphere or donut surface, without lines crossing. The real power is from another perspective: If you prove that some graph property you're interested in is retained when taking minors, you \emph{automatically} know that it is possible to determine if a given graph has that property efficiently. 
+
+\section{Notes on this result}
+So we have a theorem that says that to determine whether a graph has a certain property, a finite amount of cases have to be checked, and each case can be checked efficiently. But the Robertson-Seymour theorem says nothing about which these cases are; for all but the most elementary cases, we have no idea which graphs are in the list of \say{forbidden minors}. As an example, the property that a graph can be drawn on a donut surface without lines intersecting turns out to be retained while taking minors, but the list of forbidden minors has been proved to be of size at least 17000, and there is no guarantee that this list is exhaustive. To add insult to injury, the algorithm that decides whether a graph $G$ has another fixed graph $H$ as a minor turns out to be so terribly slow in practise that running it 
+
+\section{The debate around this result}
+While no new schools of complexity theory were started after this result appeared (to my knowledge), this result called into question whether the categorizations we have chosen for when to call an algorithm \say{efficient}, and really, how we prove things in complexity theory, are really the right ones. For one, the case for constructive results is much stronger when it comes to algorithms; If the purpose of complexity theory is to find efficient algorithms for important problems, what good is it, really, to know that an algorithm exists if we have no way of constructing, let alone use it? Also, can an algorithm really be called \say{efficient} if running it will take many times the lifetime of the universe for the most trivial of cases? Indeed, one famous computer scientist is supposed to have said about this result: \say{This is not computer science. This is a mathematical curiosity!}. This result has its own version of Govan's saying. 
+
+\section{Concluding remarks}
+In my opinion, complexity theory took a significant step away from computer science and toward mathematics with this result (which came from pure mathematics, interestingly enough!). While it is wonderfully useless in itself, it makes one reconsider preconceived notions and intuition related to what an algorithm is. As a fan of all things useless and interesting, I hope for more, not fewer, results of this kind in the future. 
+
+\end{document}
