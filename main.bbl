@@ -1,0 +1,454 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{aroraComputationalComplexityModern2009a}{book}{}
+      \name{author}{2}{}{%
+        {{hash=8e08b59145b9531815169c7ed0a0b055}{%
+           family={Arora},
+           familyi={A\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ef4505bdcbc58ae15e11f8bc6c51af7e}{%
+           family={Barak},
+           familyi={B\bibinitperiod},
+           given={Boaz},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \strng{fullhash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \strng{bibnamehash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \strng{authorbibnamehash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \strng{authornamehash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \strng{authorfullhash}{af2b04a0bcd76cc1a4cd54f6e4b95158}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-511-80409-0}
+      \field{langid}{english}
+      \field{shorttitle}{Computational {{Complexity}}}
+      \field{title}{Computational {{Complexity}}: {{A Modern Approach}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1017/CBO9780511804090
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\BCNX76CE\\Arora and Barak - 2009 - Computational Complexity A Modern Approach.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ebooks.cambridge.org/ref/id/CBO9780511804090
+      \endverb
+      \verb{url}
+      \verb http://ebooks.cambridge.org/ref/id/CBO9780511804090
+      \endverb
+    \endentry
+    \entry{bridgesConstructiveMathematics2018}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=e14087394afd2bbd2f3fb5b506a2349b}{%
+           family={Bridges},
+           familyi={B\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=46538b49a01f68b719cc0401fca886bf}{%
+           family={Palmgren},
+           familyi={P\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford University}%
+      }
+      \strng{namehash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{fullhash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{bibnamehash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{authorbibnamehash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{authornamehash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{authorfullhash}{1536e9c0ba8a3655447988669b4b170d}
+      \strng{editorbibnamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editornamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editorfullhash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Constructive mathematics is distinguished from its traditionalcounterpart, classical mathematics, by the strict interpretation of thephrase “there exists” as “we can construct”. Inorder to work constructively, we need to re-interpret not only theexistential quantifier but all the logical connectives and quantifiersas instructions on how to construct a proof of the statement involvingthese logical expressions., In this article we introduce modern constructive mathematics based onthe BHK-interpretation of the logical connectives and quantifiers. Wediscuss four major varieties of constructive mathematics, withparticular emphasis on the two varieties associated with Errett Bishopand Per Martin-Löf, which can be regarded as minimal constructivesystems. We then outline progress in (informal) constructive reversemathematics, a research programme seeking to identify principles, suchas Brouwer’s fan theorem, that, added to the minimal constructivevarieties, facilitate proofs of important analytic theorems. After a brief discussion of constructive algebra, economics, and finance, the entry ends with two appendices: one on certain logical principles that hold in classical, intuitionistic, and recursive mathematics and which, added to Bishop's constructive mathematics, facilitate the proof of certain useful theorems of analysis; and one discussing approaches to a constructive development of general topology.}
+      \field{booktitle}{The {{Stanford Encyclopedia}} of {{Philosophy}}}
+      \field{edition}{Summer 2018}
+      \field{title}{Constructive {{Mathematics}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\DYBIXCJW\\mathematics-constructive.html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/archives/sum2018/entries/mathematics-constructive/
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/archives/sum2018/entries/mathematics-constructive/
+      \endverb
+    \endentry
+    \entry{diestelGraphTheory2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d7750765c1eb004bdcdce07ed2272ba7}{%
+           family={Diestel},
+           familyi={D\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{fullhash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{bibnamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authorbibnamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authornamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authorfullhash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-53621-6 978-3-662-53622-3}
+      \field{langid}{english}
+      \field{series}{Graduate {{Texts}} in {{Mathematics}}}
+      \field{title}{Graph {{Theory}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{173}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-662-53622-3
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\EYL26H8T\\Diestel - 2017 - Graph Theory.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-662-53622-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-662-53622-3
+      \endverb
+    \endentry
+    \entry{GraphMinor2020}{inreference}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In graph theory, an undirected graph H is called a minor of the graph G if H can be formed from G by deleting edges and vertices and by contracting edges. The theory of graph minors began with Wagner's theorem that a graph is planar if and only if its minors include neither the complete graph K5 nor the complete bipartite graph K3,3. The Robertson–Seymour theorem implies that an analogous forbidden minor characterization exists for every property of graphs that is preserved by deletions and edge contractions. For every fixed graph H, it is possible to test whether H is a minor of an input graph G in polynomial time; together with the forbidden minor characterization this implies that every graph property preserved by deletions and contractions may be recognized in polynomial time.Other results and conjectures involving graph minors include the graph structure theorem, according to which the graphs that do not have H as a minor may be formed by gluing together simpler pieces, and Hadwiger's conjecture relating the inability to color a graph to the existence of a large complete graph as a minor of it. Important variants of graph minors include the topological minors and immersion minors.}
+      \field{annotation}{Page Version ID: 978000162}
+      \field{booktitle}{Wikipedia}
+      \field{day}{12}
+      \field{hour}{7}
+      \field{langid}{english}
+      \field{minute}{52}
+      \field{month}{9}
+      \field{second}{32}
+      \field{timezone}{Z}
+      \field{title}{Graph Minor}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\C72YHSP8\\index.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Graph_minor&oldid=978000162
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Graph_minor&oldid=978000162
+      \endverb
+    \endentry
+    \entry{iemhoffIntuitionismPhilosophyMathematics2020}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=14eccfc6a4675763cd48755206aa7593}{%
+           family={Iemhoff},
+           familyi={I\bibinitperiod},
+           given={Rosalie},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford University}%
+      }
+      \strng{namehash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{fullhash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{bibnamehash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{authorbibnamehash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{authornamehash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{authorfullhash}{14eccfc6a4675763cd48755206aa7593}
+      \strng{editorbibnamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editornamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editorfullhash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intuitionism is a philosophy of mathematics that was introduced by theDutch mathematician L.E.J. Brouwer (1881–1966). Intuitionism isbased on the idea that mathematics is a creation of the mind. Thetruth of a mathematical statement can only be conceived via a mentalconstruction that proves it to be true, and the communication betweenmathematicians only serves as a means to create the same mentalprocess in different minds., This view on mathematics has far reaching implications for the dailypractice of mathematics, one of its consequences being that theprinciple of the excluded middle, (A∨¬A)(A∨¬A)(A \textbackslash vee \textbackslash neg A), is no longervalid. Indeed, there are propositions, like the Riemann hypothesis,for which there exists currently neither a proof of the statement norof its negation. Since knowing the negation of a statement inintuitionism means that one can prove that the statement is not true,this implies that both AAA and ¬A¬A\textbackslash neg A do not holdintuitionistically, at least not at this moment. The dependence ofintuitionism on time is essential: statements can become provable inthe course of time and therefore might become intuitionistically validwhile not having been so before., Besides the rejection of the principle of the excluded middle,intuitionism strongly deviates from classical mathematics in theconception of the continuum, which in the former setting has theproperty that all total functions on it are continuous. Thus, unlikeseveral other theories of constructive mathematics, intuitionism isnot a restriction of classical reasoning; it contradicts classicalmathematics in a fundamental way., Brouwer devoted a large part of his life to the development ofmathematics on this new basis. Although intuitionism has neverreplaced classical mathematics as the standard view on mathematics, ithas always attracted a great deal of attention and is still widelystudied today., In this entry we concentrate on the aspects of intuitionism that setit apart from other branches of constructive mathematics, and the partthat it shares with other forms of constructivism, such asfoundational theories and models, is discussed only briefly.}
+      \field{booktitle}{The {{Stanford Encyclopedia}} of {{Philosophy}}}
+      \field{edition}{Fall 2020}
+      \field{title}{Intuitionism in the {{Philosophy}} of {{Mathematics}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\8JY5RSBQ\\intuitionism.html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/archives/fall2020/entries/intuitionism/
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/archives/fall2020/entries/intuitionism/
+      \endverb
+      \keyw{Brouwer; Luitzen Egbertus Jan,category theory,choice; axiom of,Gödel; Kurt,Hilbert; David,Hilbert; David: program in the foundations of mathematics,logic; history of: intuitionistic logic,logic: classical,logic: intuitionistic,mathematics; philosophy of: formalism,mathematics: constructive,phenomenology,Platonism: in metaphysics,set theory,type theory}
+    \endentry
+    \entry{VsNPProblem}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{title}{P vs {{NP Problem}} | {{Clay Mathematics Institute}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\2TVTE7M4\\p-vs-np-problem.html
+      \endverb
+      \verb{urlraw}
+      \verb https://claymath.org/millennium-problems/p-vs-np-problem
+      \endverb
+      \verb{url}
+      \verb https://claymath.org/millennium-problems/p-vs-np-problem
+      \endverb
+    \endentry
+    \entry{RobertsonSeymourTheorem2020}{inreference}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In graph theory, the Robertson–Seymour theorem (also called the graph minor theorem) states that the undirected graphs, partially ordered by the graph minor relationship, form a well-quasi-ordering. Equivalently, every family of graphs that is closed under minors can be defined by a finite set of forbidden minors, in the same way that Wagner's theorem characterizes the planar graphs as being the graphs that do not have the complete graph K5 or the complete bipartite graph K3,3 as minors. The Robertson–Seymour theorem is named after mathematicians Neil Robertson and Paul D. Seymour, who proved it in a series of twenty papers spanning over 500 pages from 1983 to 2004. Before its proof, the statement of the theorem was known as Wagner's conjecture after the German mathematician Klaus Wagner, although Wagner said he never conjectured it.A weaker result for trees is implied by Kruskal's tree theorem, which was conjectured in 1937 by Andrew Vázsonyi and proved in 1960 independently by Joseph Kruskal and S. Tarkowski.}
+      \field{annotation}{Page Version ID: 975608138}
+      \field{booktitle}{Wikipedia}
+      \field{day}{29}
+      \field{hour}{13}
+      \field{langid}{english}
+      \field{minute}{39}
+      \field{month}{8}
+      \field{second}{17}
+      \field{timezone}{Z}
+      \field{title}{Robertson–{{Seymour}} Theorem}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\JJ7CPHVZ\\index.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Robertson%E2%80%93Seymour_theorem&oldid=975608138
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Robertson%E2%80%93Seymour_theorem&oldid=975608138
+      \endverb
+    \endentry
+    \entry{seymourGraphMinorsXIII1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9c86b2da84f8e18c3c5e6194460cbfbb}{%
+           family={Seymour},
+           familyi={S\bibinitperiod},
+           given={P.D.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=30004d929a781bee1262997e1b576502}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{28872cb2605eedfb534a4634d6c057f5}
+      \strng{fullhash}{28872cb2605eedfb534a4634d6c057f5}
+      \strng{bibnamehash}{28872cb2605eedfb534a4634d6c057f5}
+      \strng{authorbibnamehash}{28872cb2605eedfb534a4634d6c057f5}
+      \strng{authornamehash}{28872cb2605eedfb534a4634d6c057f5}
+      \strng{authorfullhash}{28872cb2605eedfb534a4634d6c057f5}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Combinatorial Theory, Series B}
+      \field{title}{Graph {{Minors XIII}}: {{The Disjoint Paths Problem}}}
+      \field{volume}{63}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{65\bibrangedash 110}
+      \range{pages}{46}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\AT8ZAY3T\\81147875.pdf
+      \endverb
+    \endentry
+    \entry{vanattenLuitzenEgbertusJan2020}{incollection}{useprefix=true}
+      \name{author}{1}{}{%
+        {{hash=3f2bf5bf8384add1388bc608f8456756}{%
+           family={Atten},
+           familyi={A\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford University}%
+      }
+      \strng{namehash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{fullhash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{bibnamehash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{authorbibnamehash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{authornamehash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{authorfullhash}{3f2bf5bf8384add1388bc608f8456756}
+      \strng{editorbibnamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editornamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editorfullhash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \field{sortinit}{v}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dutch mathematician and philosopher who lived from 1881 to 1966. He istraditionally referred to as “L.E.J. Brouwer”, with fullinitials, but was called “Bertus” by his friends. , In classical mathematics, he founded modern topology byestablishing, for example, the topological invariance of dimension andthe fixpoint theorem. He also gave the first correct definition ofdimension., In philosophy, his brainchild is intuitionism, a revisionistfoundation of mathematics. Intuitionism views mathematics as a freeactivity of the mind, independent of any language or Platonic realm ofobjects, and therefore bases mathematics on a philosophy of mind. Theimplications are twofold. First, it leads to a form of constructivemathematics, in which large parts of classical mathematics arerejected. Second, the reliance on a philosophy of mind introducesfeatures that are absent from classical mathematics as well as fromother forms of constructive mathematics: unlike those, intuitionisticmathematics is not a proper part of classical mathematics.}
+      \field{booktitle}{The {{Stanford Encyclopedia}} of {{Philosophy}}}
+      \field{edition}{Spring 2020}
+      \field{title}{Luitzen {{Egbertus Jan Brouwer}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\W6D8IMBT\\brouwer.html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/archives/spr2020/entries/brouwer/
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/archives/spr2020/entries/brouwer/
+      \endverb
+      \keyw{Cantor; Georg,Frege; Gottlob: controversy with Hilbert,Hilbert; David,Hilbert; David: program in the foundations of mathematics,Kant; Immanuel: philosophy of mathematics,logic; history of: intuitionistic logic,logic: classical,logic: intuitionistic,mathematics; philosophy of,mathematics; philosophy of: formalism,mathematics; philosophy of: intuitionism,mathematics: constructive,Platonism: in metaphysics,Platonism: in the philosophy of mathematics,set theory: early development,Weyl; Hermann,Wittgenstein; Ludwig: philosophy of mathematics}
+    \endentry
+    \entry{zachHilbertProgram2019}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=47b1d91a59c6cfbbc805f1f8612ca06e}{%
+           family={Zach},
+           familyi={Z\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford University}%
+      }
+      \strng{namehash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{fullhash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{bibnamehash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{authorbibnamehash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{authornamehash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{authorfullhash}{47b1d91a59c6cfbbc805f1f8612ca06e}
+      \strng{editorbibnamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editornamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editorfullhash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the early 1920s, the German mathematician David Hilbert(1862–1943) put forward a new proposal for the foundation ofclassical mathematics which has come to be known as Hilbert’sProgram. It calls for a formalization of all of mathematics inaxiomatic form, together with a proof that this axiomatization ofmathematics is consistent. The consistency proof itself was to becarried out using only what Hilbert called “finitary”methods. The special epistemological character of finitary reasoningthen yields the required justification of classicalmathematics. Although Hilbert proposed his program in this form onlyin 1921, various facets of it are rooted in foundational work of hisgoing back until around 1900, when he first pointed out the necessityof giving a direct consistency proof of analysis. Work on the programprogressed significantly in the 1920s with contributions fromlogicians such as Paul Bernays, Wilhelm Ackermann, John von Neumann,and Jacques Herbrand. It was also a great influenceon Kurt Gödel, whose work on theincompleteness theorems were motivated by Hilbert’s Program.Gödel’s work is generally taken to show that Hilbert’s Programcannot be carried out. It has nevertheless continued to be aninfluential position in the philosophy of mathematics, and, startingwith the work of Gerhard Gentzen in the 1930s, work on so-calledRelativized Hilbert Programs have been central to thedevelopment of proof theory.}
+      \field{booktitle}{The {{Stanford Encyclopedia}} of {{Philosophy}}}
+      \field{edition}{Fall 2019}
+      \field{title}{Hilbert’s {{Program}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Jonas\\Zotero\\storage\\J8WHZ9HX\\hilbert-program.html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/archives/fall2019/entries/hilbert-program/
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/archives/fall2019/entries/hilbert-program/
+      \endverb
+      \keyw{Brouwer; Luitzen Egbertus Jan,epsilon calculus,Frege; Gottlob: controversy with Hilbert,Gödel; Kurt,Gödel; Kurt: incompleteness theorems,Hilbert; David,mathematics; philosophy of,mathematics; philosophy of: formalism,mathematics; philosophy of: intuitionism,Principia Mathematica,proof theory: development of,Russell; Bertrand}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
