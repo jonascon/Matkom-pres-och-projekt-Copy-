@@ -30,7 +30,7 @@ Jonas Conneryd \\ \url{conneryd@kth.se}}
 \rhead{970731-7559  \\
 \the\year
 }
-\chead{\Large{\scshape{{Non-Constructive Algorithms} \\ \vspace{-4pt}\normalsize{MM7042 Mathematical Communication}}}}
+\chead{\Large{\scshape{{Can Algorithms Be Constructed Non-Constructively?} \\ \vspace{-4pt}\normalsize{MM7042 Mathematical Communication}}}}
 \cfoot{\thepage}
 }
 
@@ -80,7 +80,7 @@ topline=false,bottomline=false,leftline=false,rightline=false
 %shaded={bgcolor=\color{rgb}{0.9,0.9,0.9}}
 \interfootnotelinepenalty=10000
 %\title{\vspace{-2cm}\textbf{\textsf{ Homework 3}}}
-\title{Non-Constructive Algorithms}
+\title{Can Algorithms Be Constructed Non-Constructively?}
 \author{
 Jonas Conneryd \\
 \url{conneryd@kth.se} \\
@@ -107,27 +107,24 @@ MM7042 Mathematical Communication\\
 
 
 \section{Introduction}
-In modern mathematics, the notion of what constitutes a mathematical proof seems to be clear enough that results can be published in journals, prizes can be awarded, and incorrect proofs can be refuted. (However, it seems that when you ask mathematicians what exactly\cite{seymourGraphMinorsXIII1995} \cite{vanattenLuitzenEgbertusJan2020} a proof is, you're likely to get an answer similar to what Louis Armstrong is supposed to have replied when asked to define jazz: ''If you have to ask, you'll never know''). But this wasn't always as universally agreed upon; in the start of the 20:th century, powerful but non-constructive results sparked a debate among mathematicians about which proof methods are valid. While this debate was eventually essentially settled in favor of non-constructive results, constructive mathematics seems to have gotten a spiritual successor in the form of algorithms research. Surely, to prove a result of the form ''There exists an algorithm that solves a certain computational problem with a certain efficiency'', what else could one do than provide an algorithm that solves the problem at hand, and prove that it does so with the claimed efficiency? This essay will survey a result which goes about proving such a result in a non-constructive way.
+In modern mathematics, the notion of what constitutes a mathematical proof seems to be clear enough that results can be published in journals, prizes can be awarded, and incorrect proofs can be refuted. (However, it seems that when you ask mathematicians what exactly a proof is, you're likely to get an answer similar to what Louis Armstrong is supposed to have replied when asked to define jazz: ''If you have to ask, you'll never know''). But this wasn't always as universally agreed upon; in the start of the 20:th century, Hilbert produceed a powerful but non-constructive existence proof that sparked a debate among mathematicians about the validity of such proofs. While this debate was eventually essentially settled in favor of non-constructive existence proofs, constructive mathematics seems to have gotten a spiritual successor in the form of algorithms research. Surely, to prove a result of the form ''There exists an algorithm that solves a certain computational problem with a certain efficiency'', what else could one do than provide an algorithm that solves the problem at hand, and prove that it does so with the claimed efficiency? This essay will survey a result which goes about proving such a result in a non-constructive way, and compare the subsequent discussions regarding this result with those surrounding Hilbert's result.
 
-\section{The Result that Started it All}
-Up until the end of the 19:th century, essentially all mathematical existence proofs had been constructive in nature. Although Cantor seems to have produced some non-constructive existence results, it was the proof of Hilbert's Basis Theorem in 1888 that initially sparked a debate about the nature of proof. Hilbert's Basis Theorem states that
-\begin{theorem}
-If $R$ is a Noetherian ring, then $R[X]$ is a Noetherian ring.
-\end{theorem}
-To some readers, this result is second nature; to others it says nothing at all. What matters here is however \emph{how} he proved it. To prove this result, one needs to show that a finite collection of mathematical objects with a set of certain specifications exists. Hilbert did so without actually \emph{constructing} them, which was novel at the time. The result itself is very powerful and the basis of many further results in algebra.
+\section{The result that started it sll}
+The proof of Hilbert's Basis Theorem, originally from 1888 but coming into prominence some time later, sparked an intense debate regarding the nature of proof \cite[p.~1]{mclartyTheologyItsDiscontents2008}. The result itself requires more prerequisite theory than is necessary to introduce here, so it is omitted\footnote{The interested reader can consult any textbook on Algebraic Geometry. Note however that the proof contained in the chosen textbook is probably not Hilbert's original proof.}. What matters in this essay is however \emph{how} he proved it. To prove this result, one needs to show that a finite collection of mathematical objects with a set of certain specifications exists. Hilbert did so without actually \emph{constructing} them, instead showing that their non-existence would be contradictory \cite[p.~33]{reidHilbert1996}.
 
-\section{The Objections}
-A cohort of mathematicians that were sympathetic towards the constructivist view of mathematics, in which a proof of existence is one where the object of interest is actually constructed, were not convinced by this proof. Paul Gordan, known to all students of quantum mechanics for ''Clebsch-Gordan coefficients'', is supposed to have said about this result, albeit with unclear intention, that
+\section{The objections}
+A cohort of mathematicians that were sympathetic towards the constructivist view of mathematics, in which a proof of existence is one where the object of interest is actually constructed, were not convinced by this proof. Paul Gordan is supposed to have said about this result (albeit with unclear intention, cf. \cite{mclartyTheologyItsDiscontents2008}) that
 
-''This is not mathematics; this is theology!''.
-
-Poincaré also put forward sharp criticism, but perhaps the fiercest opponent was L. E. J. Brouwer (of Brouwer's fixed point theorem fame) and the followers of his \emph{intuitionist} view of mathematics. There are other schools of constructive mathematics (for an overview, see Section 3 in \cite{bridgesConstructiveMathematics2018}) but in consideration of space, only intuitionism is (briefly) surveyed in this essay.
+\begin{center}
+\emph{''This is not mathematics. This is theology!''}\cite[p.~1]{mclartyTheologyItsDiscontents2008}.
+\end{center}
+The fiercest opponent to such non-constructive methods as was used in Hilbert's proof was however probably L. E. J. Brouwer (of Brouwer's fixed point theorem fame) and the followers of his \emph{intuitionist} view of mathematics. There are other schools of constructive mathematics\footnote{For an overview, see Section 3 in \cite{bridgesConstructiveMathematics2018}.} but in consideration of space, only intuitionism is (briefly) surveyed in this essay.
 
 \section{What is intuitionism?}
-Hilbert was a proponent of \emph{formalism} \cite{zachHilbertProgram2019}, which maintained the view that mathematics is essentially a game about symbol manipulation in which the rules are clear and well defined, and results obtained through these rules are, in some sense, objectively true within the bounds of the game\footnote{This is obviously, and in this medium probably unavoidably, a gross simplification of the ideas Hilbert subscribed to in the philosophy of mathematics. For a more detailed account and its connection to the project to axiomatize mathematics initiated by Hilbert, see \cite{zachHilbertProgram2019}.}. Brouwer, on the other hand, thought that mathematics is inherently a subjective activity - the result of constructive mental activity by humans \cite{iemhoffIntuitionismPhilosophyMathematics2020}. This implies in particular that mathematical truth is subjective, with the following consequence: A mathematical object is considered a product of a construction produced by a mind, and therefore existence of an object is \emph{equivalent} to its possibility of being constructed. This stands in sharp contrast to the usual approach, in which it is valid to prove existence of an object through refuting its non-existence. Put succinctly, yet possibly a bit crudely, intuitionists in the sense of Brouwer refute the validity of the \emph{law of excluded middle}: That for any proposition, either that proposition or its negation are true \cite{iemhoffIntuitionismPhilosophyMathematics2020}.
+Hilbert was a proponent of \emph{formalism} \cite{zachHilbertProgram2019}, which maintained the view that mathematics is essentially a game about symbol manipulation in which the rules are clear and well defined, and results obtained through these rules are, in some sense, objectively true within the bounds of the game\footnote{This is obviously, and in this medium probably unavoidably, a gross simplification of the ideas Hilbert subscribed to in the philosophy of mathematics. For a more detailed account and its connection to the project to axiomatize mathematics initiated by Hilbert, see \cite{zachHilbertProgram2019}.}. Brouwer, on the other hand, thought that mathematics is inherently a subjective activity - the result of constructive mental activity by humans \cite{iemhoffIntuitionismPhilosophyMathematics2020}. This implies in particular that mathematical truth is subjective, with the following consequence: A mathematical object is considered a product of a construction produced by a mind, and therefore existence of an object is \emph{equivalent} to its possibility of being constructed. This stands in sharp contrast to the usual approach, in which it is valid to prove existence of an object through refuting its non-existence. Put succinctly, yet possibly a bit crudely, intuitionists in the sense of Brouwer refute the validity of the \emph{law of excluded middle}: That for any proposition, either that proposition or its negation are true \cite{iemhoffIntuitionismPhilosophyMathematics2020}. A follower of intuitionism would then not be convinced of a proof which essentially boils down to a statement of the form ''$\lnot A$'', where $A$ in the case of Hilbert's Basis Theorem would be the statement establishing non-existence of the sought mathematical objects.
 
 \section{Algorithmic research and non-constructivism}
-The mathematics of the 21st century seems to not be especially concerned with issues similar to those discussed in the Hilbert-Brouwer controverst. Indeed, the debate over the law of excluded middle seems to have been decisively settled in favor of it, as most any practicioner of mathematics would be ready to confirm. But it seems that mathematics whose chief concern is actual construction of mathematical objects has made somewhat of a comeback with the advent of the mathematical theory of computation, more precisely the mathematical study of algorithms.
+The mathematics of the 21st century seems to not be especially concerned with issues similar to those discussed in the Hilbert-Brouwer controversy; indeed, the debate over the law of excluded middle seems to have been decisively settled in favor of it, as most any practicioner of mathematics would be ready to confirm. But it seems that branches of mathematics whose only real concern is actual construction of mathematical objects has made somewhat of a comeback with the advent of the mathematical theory of computation, more precisely the mathematical study of algorithms.
 
 Complexity Theory, that part of mathematics that deals with classifying computational problems after how efficiently they can be solved by algorithms. In Complexity Theory, the notion of an ''effective'' algorithm is defined to be an algorithm whose running time scales polynomially with the size of the input to the algorithm\footnote{For a discussion on this definition of ''effectiveness'' in Complexity Theory, see Section 1.5 in  \cite{aroraComputationalComplexityModern2009a}. }. Complexity Theory is a proper subfield of mathematics, and results in Complexity Theory are in general answers to questions of the form
 \begin{center}
@@ -135,7 +132,7 @@ Complexity Theory, that part of mathematics that deals with classifying computat
 \end{center}
 How would one prove an affirmative result in Complexity Theory? The answer seems to invariably be to construct an algorithm that indeed solves the computational problem at hand with sufficient efficiency\footnote{Negative results are another story. A general way to prove negative results in Complexity Theory is worth at least a million dollars in prize money, cf. \cite{VsNPProblem}.}. Nonetheless, it turns out that there are non-constructive existence results in Complexity Theory, and the remainder of this essay aims to introduce one such result (or rather, an infinite collection of such results).
 
-\section{The Robertson-Seymour theorem}
+\section{The Robertson-Seymour Theorem}
 The results in question are the algorithmic implications of the \emph{Robertson-Seymour Theorem}, which follow from the combination of this theorem with another theorem, also by Robertson and Seymour. Both results are introduced in this essay. The results concern \emph{graphs}, which are collections of \emph{vertices} with \emph{edges} drawn between them. Some definitions are needed to state both theorems by Robertson and Seymour. It should be noted that the definitions and theorem statements in this essay are mostly of the more informal kind, since a more rigorous treatment of the subject would demand a great deal more space to convey essentially the same content.
 
 \begin{definition}[Informal]
@@ -157,7 +154,7 @@ It should be noted that the visual representation of the graph is immaterial; th
   \begin{center}
     \includegraphics[width = 0.25\textwidth]{graf.png}
   \end{center}
-    \caption{Two equivalent visual representations of the unique graph with four vertices and four edges.}
+    \caption{Two equivalent visual representations of a graph with four vertices and six edges.}
 
   \label{fig:graphs2}
 \end{figure}
@@ -194,7 +191,7 @@ A visual representation of each of the operations allowed under taking minors ca
  Planarity is one of many properties a graph can possess that are retained under taking minors. Such graph properties are called \emph{minor-closed}. The Robertson-Seymour Theorem relates to such properties of graphs, and the concepts defined so far are suficcient to state it.
 
 \begin{theorem}[Robertson-Seymour]
-Suppose a graph property $\mathcal{P}$ is retained when taking minors. Then there is a finite list of graphs such that a graph $G$ has property $\mathcal{P}$ if and only if none of the graphs in the list can be formed from $G$ by taking minors\footnote{For a detailed account of this theorem (albeit not its full proof, for good reason), see Chapter 12 of \cite{diestelGraphTheory2017}.}.
+Suppose a graph property $\mathcal{P}$ is retained when taking minors. Then there is a finite list of graphs such that a graph $G$ has property $\mathcal{P}$ if and only if none of the graphs in the list can be formed from $G$ by taking minors\footnote{For a detailed account of this theorem (albeit not its full proof, for good reason as will become clear), see Chapter 12 of \cite{diestelGraphTheory2017}.}.
 \end{theorem}
 
 \begin{remark}
@@ -203,28 +200,31 @@ Suppose a graph property $\mathcal{P}$ is retained when taking minors. Then ther
 
 At first glance, the (extremely deep) ramifications of the Robertson-Seymour Theorem might not be apparent. It should also be noted that despite the seemingly simple statement of the theorem, its proof took 20 years and comparably many long journal articles totalling over 500 pages, to complete \cite{RobertsonSeymourTheorem2020}. Its power in the field of Complexity Theory will become apparent when combined with the following result by the same authors.
 \begin{theorem}
-Let $H$ be a fixed graph, and let $G= (V, E)$ be an arbitrary graph. Then there is an algorithm that decides if $H$ is a minor of $G$ whose running time scales polynomially with the number of vertices of $G$.
+Let $H$ be a fixed graph, and let $G= (V, E)$ be an arbitrary graph. Then there is an algorithm that decides if $H$ is a minor of $G$ whose running time scales polynomially with the number of vertices in $G$.
 \end{theorem}
-For a proof of this theorem, see \cite{seymourGraphMinorsXIII1995}. The proof is constructive in that it is a description of an algorithm that checks whether $H$ is a minor of $G$ in the alotted time. The analysis of the running time of the algorithm takes around 50 pages.
+For a proof of Theorem 3, see \cite{seymourGraphMinorsXIII1995}. The proof is constructive in that it is a description of an algorithm that checks whether $H$ is a minor of $G$ in the alotted time. It is notable that just the analysis of the running time of the algorithm takes around 50 pages.
 
 
 Together, Theorem 2 and Theorem 3 will yield a very strong result about algorithms regarding the computational problem of determining whether a graph $G$ has some property $\mathcal{P}$ which is minor-closed. We know by Theorem 2 that belonging to $\mathcal{P}$ is some finite list of graphs such that a graph $G$ has property $\mathcal{P}$ if and only if none of the graphs in the list is a minor of $G$. This list is the same regardless of the input graph, so we have to check a constant, finite number of cases to determine whether $G$ has property $\mathcal{P}$. By Theorem 3 we know that we can check each case in time polynomially related to the number of vertices of $G$, so the total number of cases can in fact also be checked in time polynomially related to the number of vertices of $G$, since a constant times a polynomial is still a polynomial. Therefore, we have the following algorithmic result:
 \begin{theorem}
-Determining whether a given graph $G=(V, E)$ has a property $\mathcal{P}$ that is closed under taking minors can be done in time polynomially related to the number of verices of $G$.
+Determining whether a given graph $G=(V, E)$ has a property $\mathcal{P}$ that is closed under taking minors can be done in time polynomially related to the number of vertices in $G$.
 \end{theorem}
 
-We already saw one example of a minor-closed property, namely planarity. More generally, one (out of many) family of minor-closed properties of a graph is being able to be drawn on a surface, such as a sphere or donut surface, without edges crossing \cite{GraphMinor2020}.
+One example of a minor-closed property was mentioned earlier, namely planarity. More generally, one famlily (out of many) of minor-closed properties of a graph is being able to be drawn on a surface, such as a sphere or donut surface, without edges crossing \cite{GraphMinor2020}.
 
-This is indeed a non-constructive existence proof of an efficient 
+This result is indeed a non-constructive proof of the existence of an efficient algorithm for the computational problem of deciding whether a graph $G$ has a given minor-closed property $\mathcal{P}$, since the Robertson-Seymour Theorem does not explicitly say what the forbidden minors of $\mathcal{P}$ are, only that they exist and that there are finitely many of them. It is in fact in general highly non-trivial to find these forbidden minors, and only some cases are known. For example, the list of forbidden minors that characterize planarity of a graph contains exactly two graphs; this result is known as \emph{Wagner's Theorem} (for a proof of this, see Section 4.4 of \cite{diestelGraphTheory2017}). However, the list of forbidden minors that characterize whether a graph can be drawn on a donut surface without intersecting edges is known to contain at least 17 000 graphs, and it is not known whether this list is exhaustive \cite{ToroidalGraph2019}.
 
-\section{Non-constructive existealgorithms}
-So we have a theorem that says that to determine whether a graph has a certain property, a finite amount of cases have to be checked, and each case can be checked efficiently. But the Robertson-Seymour theorem says nothing about which these cases are; for all but the most elementary cases, we have no idea which graphs are in the list of ''forbidden minors''. As an example, the property that a graph can be drawn on a donut surface without lines intersecting turns out to be retained while taking minors, but the list of forbidden minors has been proved to be of size at least 17000, and there is no guarantee that this list is exhaustive. To add insult to injury, the algorithm that decides whether a graph $G$ has another fixed graph $H$ as a minor turns out to be so terribly slow in practise that running it
+Another caveat of this result is that the term ''polynomially related'', and hence the characterization of ''efficient'' used in Complexity Theory, does not take into account constant factors in the running time. For the algorithm in Theorem 3 it turns out that this constant factor is so large that it makes the algorithm unusable in even the most trivial cases; it is at least on the order of $2^{500}$ \cite[p.~151]{downeyParameterizedComplexity1999}.
 
-\section{The debate around this result}
-While no new schools of Complexity Theory were started after this result appeared (to my knowledge), this result called into question whether the categorizations we have chosen for when to call an algorithm ''efficient'', and really, how we prove things in Complexity Theory, are really the right ones. For one, the case for constructive results is much stronger when it comes to algorithms; If the purpose of Complexity Theory is to find efficient algorithms for important problems, what good is it, really, to know that an algorithm exists if we have no way of constructing, let alone use it? Also, can an algorithm really be called ''efficient'' if running it will take many times the lifetime of the universe for the most trivial of cases? Indeed, one famous computer scientist is supposed to have said about this result: ''This is not computer science. This is a mathematical curiosity!''. This result has its own version of Govan's saying.
+\section{Subsequent controversy}
+While no new schools of Complexity Theory were started after this result appeared (at least to the knowledge of the author), this result did call into question whether the categorizations chosen for when to call an algorithm ''efficient'', and what constitutes a proof in Complexity Theory, are really the right ones\footnote{For some perspectives on both of these questions, see \cite{johnsonNPCompletenessColumnOngoing} as well as \cite[p.~151-152]{downeyParameterizedComplexity1999}.}. For one, the case for constructive results is much stronger when it comes to algorithms - if the purpose of Complexity Theory is to find efficient algorithms for important problems, what good is it, really, to know that an algorithm exists if we have no way of constructing, let alone use it? Also, can an algorithm really be called ''efficient'' if running it will take many times the lifetime of the universe for the most trivial of cases? Owing to these considerations, one famous computer scientist is supposed to have said about this result:
+\begin{center}
+\emph{''This is not computer science. This is a mathematical curiosity!''}\cite[p.~152]{downeyParameterizedComplexity1999},
+\end{center}
+much in the spirit of Gordan's saying.
 
 \section{Concluding remarks}
-In my opinion, Complexity Theory took a significant step away from computer science and toward mathematics with this result (which came from pure mathematics, interestingly enough!). While it is wonderfully useless in itself, it makes one reconsider preconceived notions and intuition related to what an algorithm is. As a fan of all things useless and interesting, I hope for more, not fewer, results of this kind in the future.
+There are some interesting similarities between the proofs and subsequent controversies regarding the Hilbert Basis Theorem and Robertson-Seymour Theorem and related results. In both cases, the \emph{usefulness} of the results were questioned, and forced mathematicians to ponder whether the conceptual frames in which they worked were the right ones. Both results were also very influential and impactful and propelled their respective areas forward. However, there is also an important difference between the two situations: At no point was the \emph{validity} of the proof of the Robertson-Seymour Theorem and related results questioned, while this question was central in the discussions surrounding the Hilbert Basis Theorem. If there is any conclusion to be drawn from both situations, it is that mathematical results that push preconceived boundaries both in proof method and implications are a net positive that helps mathematicians better understand what mathematics is and can be.
 
 \newpage
 \printbibliography

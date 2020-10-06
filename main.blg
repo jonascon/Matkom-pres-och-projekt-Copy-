@@ -1,17 +1,21 @@
-[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[0] Config.pm:315> INFO - Logfile is 'main.blg'
-[602] biber-MSWIN64:330> INFO - === 
-[660] Biber.pm:415> INFO - Reading 'main.bcf'
-[1177] Biber.pm:952> INFO - Found 10 citekeys in bib section 0
-[1221] Biber.pm:4334> INFO - Processing section 0
-[1280] Biber.pm:4523> INFO - Looking for bibtex format file 'matkomkallor.bib' for section 0
-[1355] bibtex.pm:1682> INFO - LaTeX decoding ...
-[1447] bibtex.pm:1494> INFO - Found BibTeX data source 'matkomkallor.bib'
-[1601] Utils.pm:395> WARN - ISBN '978-3-662-53621-6 978-3-662-53622-3' in entry 'diestelGraphTheory2017' is invalid - run biber with '--validate_datamodel' for details.
-[1664] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1664] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1664] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1664] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[1697] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1709] bbl.pm:754> INFO - Output to main.bbl
-[1717] Biber.pm:128> INFO - WARNINGS: 1
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[86] biber-MSWIN64:322> INFO - === 
+[118] Biber.pm:415> INFO - Reading 'main.bcf'
+[259] Biber.pm:943> INFO - Found 14 citekeys in bib section 0
+[276] Biber.pm:4256> INFO - Processing section 0
+[276] Utils.pm:75> INFO - Globbing data source 'matkomkallorny.bib'
+[288] Utils.pm:91> INFO - Globbed data source 'matkomkallorny.bib' to matkomkallorny.bib
+[309] Biber.pm:4455> INFO - Looking for bibtex format file 'matkomkallorny.bib' for section 0
+[333] bibtex.pm:1653> INFO - LaTeX decoding ...
+[398] bibtex.pm:1471> INFO - Found BibTeX data source 'matkomkallorny.bib'
+[441] Utils.pm:304> WARN - ISBN '978-0-387-94674-0 978-1-4612-0739-9' in entry 'reidHilbert1996' is invalid - run biber with '--validate_datamodel' for details.
+[469] Utils.pm:304> WARN - ISBN '978-3-662-53621-6 978-3-662-53622-3' in entry 'diestelGraphTheory2017' is invalid - run biber with '--validate_datamodel' for details.
+[486] Utils.pm:304> WARN - ISBN '978-1-4612-6798-0 978-1-4612-0515-9' in entry 'downeyParameterizedComplexity1999' is invalid - run biber with '--validate_datamodel' for details.
+[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[521] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[521] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[543] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[553] bbl.pm:755> INFO - Output to main.bbl
+[558] Biber.pm:128> INFO - WARNINGS: 3
